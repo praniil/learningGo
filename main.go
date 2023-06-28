@@ -11,5 +11,6 @@ func main() {
 	// arrays.ReverseArray();
 	// arrays.Variables();
 	// arrays.Constants();
-	arrays.Array();
+	// arrays.Array();
+	arrays.Slice();
 }
