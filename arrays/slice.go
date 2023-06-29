@@ -16,10 +16,11 @@ func Slice() {
 	s = append(s, "shyam")
 	s = append(s, "ganesh")
 
-	fmt.Println("emp: ", s, "len: ", len(s), "capacity: ", cap(s)) //append = length increased
+	fmt.Println("emp: ", s, "len: ", len(s), "capacity: ", cap(s)) //append = length is increases
 
 	c := make([]string, len(s), 6)
 	copy(c, s)
 	fmt.Println("emp: ", c, "len: ", len(c), "capacity: ", cap(c))
+
 
 }
