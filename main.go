@@ -14,5 +14,6 @@ func main() {
 	// arrays.Array();
 	// arrays.Slice();
 	// arrays.Palindrome();
-	arrays.Maps();
+	// arrays.Maps();
+	arrays.Range();
 }
