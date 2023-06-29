@@ -12,5 +12,6 @@ func main() {
 	// arrays.Variables();
 	// arrays.Constants();
 	// arrays.Array();
-	arrays.Slice();
+	// arrays.Slice();
+	arrays.Palindrome();
 }
