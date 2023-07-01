@@ -16,5 +16,6 @@ func main() {
 	// arrays.Palindrome();
 	// arrays.Maps();
 	// arrays.Range();
-	arrays.Functions();
+	// arrays.Functions();
+	arrays.Variadic_function();
 }
