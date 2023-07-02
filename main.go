@@ -17,5 +17,6 @@ func main() {
 	// arrays.Maps();
 	// arrays.Range();
 	// arrays.Functions();
-	arrays.Variadic_function();
+	// arrays.Variadic_function();
+	arrays.Closures();
 }
