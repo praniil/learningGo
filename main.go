@@ -18,5 +18,6 @@ func main() {
 	// arrays.Range();
 	// arrays.Functions();
 	// arrays.Variadic_function();
-	arrays.Closures();
+	// arrays.Closures();
+	arrays.Recursion();
 }
