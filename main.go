@@ -19,5 +19,8 @@ func main() {
 	// arrays.Functions();
 	// arrays.Variadic_function();
 	// arrays.Closures();
-	arrays.Recursion();
+	// arrays.Recursion();
+// 	arrays.Pointer();
+	// arrays.Struct();
+	arrays.Interface();
 }
