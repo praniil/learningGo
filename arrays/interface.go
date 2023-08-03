@@ -32,6 +32,7 @@ func (rightTriangle *Triangle) perimeter() float64{
 	return rightTriangle.base + rightTriangle.perpendicular + math.Sqrt(math.Pow(rightTriangle.base,2)+ math.Pow(rightTriangle.perpendicular,2))
 }
 
+
 func measure (g Geometry) {
 	fmt.Println(g.area())
 	fmt.Println(g.perimeter())
