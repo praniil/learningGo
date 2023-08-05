@@ -1,3 +1,4 @@
+//struct embedding in golang is similar to inheritance in C++
 package arrays
 
 import (
@@ -16,7 +17,7 @@ type Container struct {
 	Base
 	str string
 }
-//while making a method if we use pointer and later on copy the object of that struct to another object of the same struct, same address ma data members haru basxa
+//while making a method if we use pointer and later on copy the object of that struct to another object of the same struct, same address ma "data members:= field in gonlang" haru basxa
 
 
 func StructEmbedding () {

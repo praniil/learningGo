@@ -23,5 +23,6 @@ func main() {
 	// 	arrays.Pointer();
 	// arrays.Struct();
 	// arrays.Interface();
-	arrays.StructEmbedding();
+	// arrays.StructEmbedding();
+	arrays.Generic();
 }
