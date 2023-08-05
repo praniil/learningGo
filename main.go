@@ -20,7 +20,8 @@ func main() {
 	// arrays.Variadic_function();
 	// arrays.Closures();
 	// arrays.Recursion();
-// 	arrays.Pointer();
+	// 	arrays.Pointer();
 	// arrays.Struct();
-	arrays.Interface();
+	// arrays.Interface();
+	arrays.StructEmbedding();
 }
