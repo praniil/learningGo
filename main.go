@@ -24,5 +24,7 @@ func main() {
 	// arrays.Struct();
 	// arrays.Interface();
 	// arrays.StructEmbedding();
-	arrays.Generic();
+	// arrays.Generic();
+	// arrays.Goroutine();
+	arrays.WaitGroups();
 }

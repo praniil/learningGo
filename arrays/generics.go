@@ -38,7 +38,7 @@ func Generic () {
 	// result1 := addFloat(1.0, 3.2) 
 	result := add(1, 3)
 	resultAdd := addnums(2, 3)
-	resultAddAgain := addAgain(2, 3)
+	resultAddAgain := addAgain(2.0, 3.2)
 
 	fmt.Println(result)
 	fmt.Println(resultAdd)
