@@ -1,7 +1,6 @@
 package main
 
 import (
-
 	"learningGo/arrays"
 )
 
@@ -26,5 +25,7 @@ func main() {
 	// arrays.StructEmbedding();
 	// arrays.Generic();
 	// arrays.Goroutine();
-	arrays.WaitGroups();
+	// arrays.WaitGroups()
+	// arrays.Csv();
+	arrays.Channels();
 }
