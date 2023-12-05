@@ -23,7 +23,6 @@ func (s *Stack) push(item interface{}) {
 	if s.Size < s.Capacity {
 		s.Items = append(s.Items, item)
 		s.Size++
-		fmt.Print(s.Items...)
 	} else {
 		fmt.Println("the stack is full")
 	}
@@ -34,17 +33,29 @@ func (s *Stack) pop() interface{} {
 		// popped := s.Items[s.Size-1]
 		s.Items = s.Items[: s.Size-1]
 		s.Size--
-		fmt.Print(s.Items...)
 		// return popped
 	}
 	fmt.Println("Stack uderflow!")
 	return nil
 }
 
+func (s *Stack) clear() {
+	for  s.Size > 0 {
+		s.Items = s.Items[:s.Size-1];			//slice from 0 to size-1
+		s.Size--;
+	}
+}
+
+func (s *Stack) print() {
+	fmt.Printf("items available: %d", s.Items...);
+}
+
 func StackProperties() {
 	myStack := NewStack(5)
 	myStack.push(25)
 	myStack.push(20)
-	myStack.pop()
-	myStack.pop()
+	myStack.clear();
+	myStack.push(20)
+	myStack.print();
+
 }
