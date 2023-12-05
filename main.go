@@ -28,5 +28,6 @@ func main() {
 	// arrays.WaitGroups()
 	// arrays.Csv();
 	// arrays.Channels();
-	arrays.BinarySearch();
+	// arrays.BinarySearch();
+	arrays.StackProperties();
 }
