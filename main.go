@@ -33,5 +33,7 @@ func main() {
 	// arrays.BinarySearch();
 	// arrays.StackProperties();
 	// blockchain.DigitalSignature();
-	golang.EncodingDecoding()
+	golang.EncodingDecoding();
+	golang.Sha256();
+
 }
