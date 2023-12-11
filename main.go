@@ -3,7 +3,9 @@ package main
 import (
 	// blockchain "learningGo/Blockchain"
 	// "learningGo/arrays"
-	golang "learningGo/GolangThings"
+	// golang "learningGo/GolangThings"
+	// numericalmethods "learningGo/NumericalMethods"
+	dsa "learningGo/DSA"
 )
 
 func main() {
@@ -33,7 +35,9 @@ func main() {
 	// arrays.BinarySearch();
 	// arrays.StackProperties();
 	// blockchain.DigitalSignature();
-	golang.EncodingDecoding();
-	golang.Sha256();
+	// golang.EncodingDecoding();
+	// golang.Sha256();
+	// numericalmethods.NewtonRaphson();
+	dsa.InfinixToPostfix();
 
 }
