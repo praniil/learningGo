@@ -19,15 +19,12 @@ func NewStack(capacity int) *Stack {
 	}
 }
 
-func (s *Stack) Push(item string) string {
+func (s *Stack) Push(item string) {
 	if s.Size < s.Capacity {
-		pushedItem := s.Items[s.Size+1]
 		s.Items = append(s.Items, item)
 		s.Size++
-		return pushedItem
 	} else {
 		fmt.Println("the stack is kinda full")
-		return ""
 	}
 }
 
@@ -67,21 +64,29 @@ func precedence(op rune) int {
 func InfinixToPostfix() {
 	var expression string = "A+(B*C-(D/E$F)*G)*H"
 
-	stackPostFixString := NewStack(20)
-	stack := NewStack(20)
+	stackPostFixString := NewStack(50)
+	stack := NewStack(50)
 	for i := 0; i < len(expression); i++ {
 		char := rune(expression[i])
-		if ( char >= 'A' && char <='Z') || ( char >= 'a' && char <= 'z') {
+		if (char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z') {
 			stackPostFixString.Push(string(char))
 		} else if char == '(' {
 			stack.Push(string(char))
 		} else if char == ')' {
-			for stack.LastItem()[0] != '(' {
-				stack.Push(string(char))
+			for stack.LastItem() != "" && stack.LastItem()[0] != '(' {
+				stackPostFixString.Push(stack.Pop(""))
 			}
 			stack.Pop("")
+		} else {
+			for stack.LastItem() != "" && precedence(char) <= precedence(rune(stack.LastItem()[0])) {
+				stackPostFixString.Push(stack.Pop(""))
+			}
+			stack.Push(string(char))
 		}
+	}
 
+	for stack.LastItem() != "" {
+		stackPostFixString.Push(stack.Pop(""))
 	}
 	stackPostFixString.DisplayStack()
 	stack.DisplayStack()
