@@ -1,8 +1,8 @@
 package main
 
 import (
-	// blockchain "learningGo/Blockchain"
-	array"learningGo/arrays"
+	blockchain "learningGo/Blockchain"
+	// array"learningGo/arrays"
 	// golang "learningGo/GolangThings"
 	// numericalmethods "learningGo/NumericalMethods"
 	// dsa "learningGo/DSA"
@@ -39,6 +39,7 @@ func main() {
 	// golang.Sha256();
 	// numericalmethods.NewtonRaphson();
 	// dsa.InfinixToPostfix();
-	array.ArraysProps();
+	// array.ArraysProps();
+	blockchain.HashPointer();
 
 }
