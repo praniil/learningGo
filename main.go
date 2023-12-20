@@ -6,6 +6,7 @@ import (
 	// array"learningGo/arrays"
 	// golang "learningGo/GolangThings"
 	// numericalmethods "learningGo/NumericalMethods"
+	// dsa "learningGo/DSA"
 )
 
 func main() {
@@ -41,6 +42,7 @@ func main() {
 	// dsa.InfinixToPostfix();
 	// array.ArraysProps();
 	// blockchain.HashPointer();
-	dsa.InfixPostfix();
+	// dsa.InfixPostfix()
+	dsa.Queue();
 
 }
