@@ -46,5 +46,10 @@ func Queue() {
 	queue.AddItems(23)
 	queue.AddItems(22)
 	queue.WithdrawItems()
+	queue.WithdrawItems()
+	queue.WithdrawItems()
+	queue.WithdrawItems()
+	queue.WithdrawItems()
+	queue.WithdrawItems()
 	queue.DisplayAllElements()
 }
