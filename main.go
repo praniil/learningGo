@@ -43,6 +43,7 @@ func main() {
 	// array.ArraysProps();
 	// blockchain.HashPointer();
 	// dsa.InfixPostfix()
-	dsa.Queue();
+	// dsa.Queue();
+	dsa.LinkedList();
 
 }
