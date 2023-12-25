@@ -45,6 +45,29 @@ func (li *LinkedLis) prepend(data int, nextNode *Node) {
 
 }
 
+func (li *LinkedLis) delete(data int) {
+	currentNode := li.head
+	if currentNode != nil && currentNode.data == data {
+		li.head = currentNode.next
+		currentNode = nil
+		return
+	}
+
+	var prevNode *Node
+	for currentNode != nil && currentNode.data != data {
+		prevNode = currentNode
+		currentNode = currentNode.next
+	}
+
+	if currentNode == nil {
+		return
+	}
+
+	prevNode.next = currentNode.next
+	currentNode = nil
+
+}
+
 func (li *LinkedLis) Display() {
 	current := li.head
 	for current != nil {
@@ -60,6 +83,7 @@ func LinkedList() {
 	li.append(45)
 	li.append(30)
 	li.append(90)
+	li.delete(90)
 
 	currentNode := li.head
 	for currentNode != nil && currentNode.data != 90 {
