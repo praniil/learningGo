@@ -60,17 +60,17 @@ import (
 	"fmt"
 )
 
-var array [20]int
+var array [3]int
 var front int = 0
 var rear int = -1
 
 func Enqueue() {
-	if front < rear {
+	if rear == len(array)-1 {
 		fmt.Println("queue is full")
 	} else {
 		var item int
 		fmt.Println("enter the value of item: ")
-		fmt.Scanf("%d", item)
+		fmt.Scanf("%d", &item)
 		rear++
 		array[rear] = item
 	}
@@ -96,7 +96,7 @@ func DisplayAll() {
 		fmt.Println("the queue is empty")
 	} else {
 		for i := front; i <= rear; i++ {
-			fmt.Printf("%d", array[i])
+			fmt.Printf("%d\n", array[i])
 		}
 	}
 }
@@ -104,7 +104,7 @@ func DisplayAll() {
 func Queue() {
 	var number int = 1
 	for number == 1 {
-		fmt.Println("1.Enqueue 2.Dequeue 3.Display the first Element 4.Display all 5.Exit")
+		fmt.Println("1.Enqueue 2.Dequeue 3.Display the first Element 4.Display all 5.ExitBro ")
 		var choice int
 		fmt.Println("Enter the choice")
 		fmt.Scanf("%d", &choice)
@@ -118,8 +118,10 @@ func Queue() {
 			break
 		case 3:
 			DisplayFront()
+			break
 		case 4:
 			DisplayAll()
+			break
 		case 5:
 			number = 0
 		default:
