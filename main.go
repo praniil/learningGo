@@ -3,9 +3,9 @@ package main
 import (
 	// blockchain "learningGo/Blockchain"
 	// dsa "learningGo/DSA"
-	numericalmethods "learningGo/NumericalMethods"
+	// numericalmethods "learningGo/NumericalMethods"
 	// array"learningGo/arrays"
-	// golang "learningGo/GolangThings"
+	golang "learningGo/GolangThings"
 	// numericalmethods "learningGo/NumericalMethods"
 	// dsa "learningGo/DSA"
 )
@@ -47,6 +47,8 @@ func main() {
 	// dsa.Queue();
 	// dsa.LinkedList();
 	// dsa.Queue();
-	numericalmethods.Bisection();
+	// numericalmethods.Bisection();
+	// golang.Goroutine();
+	golang.Channels();
 
 }
