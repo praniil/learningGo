@@ -5,7 +5,8 @@ import (
 	// dsa "learningGo/DSA"
 	// numericalmethods "learningGo/NumericalMethods"
 	// array"learningGo/arrays"
-	golang "learningGo/GolangThings"
+	// golang "learningGo/GolangThings"
+	golangthings "learningGo/GolangThings"
 	// numericalmethods "learningGo/NumericalMethods"
 	// dsa "learningGo/DSA"
 )
@@ -49,6 +50,7 @@ func main() {
 	// dsa.Queue();
 	// numericalmethods.Bisection();
 	// golang.Goroutine();
-	golang.Channels();
+	// golang.Channels()
+	golangthings.Fibonacci();
 
 }
