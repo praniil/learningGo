@@ -6,9 +6,11 @@ import (
 	// numericalmethods "learningGo/NumericalMethods"
 	// array"learningGo/arrays"
 	// golang "learningGo/GolangThings"
-	golangthings "learningGo/GolangThings"
+	// golangthings "learningGo/GolangThings"
 	// numericalmethods "learningGo/NumericalMethods"
 	// dsa "learningGo/DSA"
+	// game "learningGo/GameLogic"
+	dsa "learningGo/DSA"
 )
 
 func main() {
@@ -51,6 +53,8 @@ func main() {
 	// numericalmethods.Bisection();
 	// golang.Goroutine();
 	// golang.Channels()
-	golangthings.Fibonacci();
+	// golangthings.Fibonacci();
+	// game.TicTacToe()
+	dsa.TowerOfHanoi();
 
 }
