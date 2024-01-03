@@ -10,13 +10,14 @@ type StacK struct {
 	capacity int
 }
 
-func (s *StacK) NewStack() *StacK {
-	stack := &StacK{items: make([]int, 0, 5), size: 0, capacity: 5}
-	return stack
+func (s *StacK) NewStack() {
+	s.items = make([]int, 0, 5)
+	s.size = 0
+	s.capacity = 5
 }
 
 func (s *StacK) addItems(item int) {
-	if s.size == s.capacity-1 {
+	if s.size == s.capacity {
 		fmt.Println("stack is full")
 	} else {
 		s.items = append(s.items, item)
@@ -29,44 +30,41 @@ func (s *StacK) PopItem() int {
 		fmt.Println("the stack is empty")
 		return 0
 	} else {
-		items := s.items[:s.size-1]
 		poppedItem := s.items[s.size-1]
-		s.items = items
+		s.items = s.items[:s.size-1]
 		s.size--
 		return poppedItem
 	}
 }
 
 func (s *StacK) DisplayAllItems() {
-	for i := 0; i < s.size; i++ {
+	for i := s.size - 1; i >= 0; i-- {
 		fmt.Println(s.items[i])
 	}
 }
 
-func TOHoperation(number int, sA *StacK, sB *StacK, sC *StacK) {
-	if number > 0 {
-
-		TOHoperation(number-1, sA, sC, sB)
-		sC.addItems(sA.PopItem())
-		TOHoperation(number-1, sC, sA, sB)
+func TOHoperation(n int, source, aux, dest *StacK) {
+	if n > 0 {
+		TOHoperation(n-1, source, dest, aux)
+		dest.addItems(source.PopItem())
+		TOHoperation(n-1, aux, source, dest)
 	}
 }
 
 func TowerOfHanoi() {
 	var stackA, stackB, stackC StacK
 	var number int
-	fmt.Println("enter the number of hanoi you want: ")
+	fmt.Println("Enter the number of disks for Tower of Hanoi: ")
 	stackA.NewStack()
 	stackB.NewStack()
 	stackC.NewStack()
 	fmt.Scanf("%d", &number)
-	for i := 1; i <= number; i++ {
+	for i := number; i > 0; i-- {
 		stackA.addItems(i)
 	}
+
 	TOHoperation(number, &stackA, &stackB, &stackC)
-	stackA.DisplayAllItems()
-	fmt.Println("-------")
-	stackB.DisplayAllItems()
-	fmt.Println("-------")
+
+	fmt.Println("Contents of stackC (Destination):")
 	stackC.DisplayAllItems()
 }
