@@ -10,7 +10,8 @@ import (
 	// numericalmethods "learningGo/NumericalMethods"
 	// dsa "learningGo/DSA"
 	// game "learningGo/GameLogic"
-	dsa "learningGo/DSA"
+	// dsa "learningGo/DSA"
+	leetcode "learningGo/Leetcode"
 )
 
 func main() {
@@ -55,6 +56,7 @@ func main() {
 	// golang.Channels()
 	// golangthings.Fibonacci();
 	// game.TicTacToe()
-	dsa.TowerOfHanoi();
+	// dsa.TowerOfHanoi();
+	leetcode.RoatatingArray();
 
 }
