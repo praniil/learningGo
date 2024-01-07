@@ -57,6 +57,7 @@ func main() {
 	// golangthings.Fibonacci();
 	// game.TicTacToe()
 	// dsa.TowerOfHanoi();
-	leetcode.RoatatingArray();
+	// leetcode.RoatatingArray();
+	leetcode.TwoSum();
 
 }
