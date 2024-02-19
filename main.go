@@ -1,17 +1,7 @@
 package main
 
 import (
-	// blockchain "learningGo/Blockchain"
-	// dsa "learningGo/DSA"
-	// numericalmethods "learningGo/NumericalMethods"
-	// array"learningGo/arrays"
-	// golang "learningGo/GolangThings"
-	// golangthings "learningGo/GolangThings"
-	// numericalmethods "learningGo/NumericalMethods"
-	// dsa "learningGo/DSA"
-	// game "learningGo/GameLogic"
-	// dsa "learningGo/DSA"
-	leetcode "learningGo/Leetcode"
+	workerpools "learningGo/workerPools"
 )
 
 func main() {
@@ -58,6 +48,7 @@ func main() {
 	// game.TicTacToe()
 	// dsa.TowerOfHanoi();
 	// leetcode.RoatatingArray();
-	leetcode.TwoSum();
+	// leetcode.TwoSum();
+	workerpools.WorkerPool()
 
 }
