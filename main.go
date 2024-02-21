@@ -1,7 +1,7 @@
 package main
 
 import (
-	workerpools "learningGo/workerPools"
+	"learningGo/concurrency"
 )
 
 func main() {
@@ -49,6 +49,7 @@ func main() {
 	// dsa.TowerOfHanoi();
 	// leetcode.RoatatingArray();
 	// leetcode.TwoSum();
-	workerpools.WorkerPool()
+	// workerpools.WorkerPool()
+	concurrency.Concurrency()
 
 }
