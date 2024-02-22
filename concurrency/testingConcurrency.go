@@ -26,7 +26,10 @@ func sumConcurrent(array []int, result chan<- int, wg *sync.WaitGroup) {
 func Concurrency() {
 	// fmt.Println("Con")
 	tInitial := time.Now()
-	array := []int{1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12}
+	array := make([]int, 1000000)
+	for i := 0; i < len(array); i++ {
+		array[i] = i
+	}
 	size := len(array)
 	/* without using go concurrency or goroutines */
 	total := sum(array, size)
@@ -57,7 +60,7 @@ func Concurrency() {
 	for res := range resultChan {
 		totalResultFromAllWorkers += res
 	}
-	fmt.Printf("concurrent result: %d", totalResultFromAllWorkers)
+	fmt.Printf("concurrent result: %d\n", totalResultFromAllWorkers)
 	timeFinal := time.Now()
 	totalConcurrentTime := timeFinal.Sub(timeInitial)
 	fmt.Printf("total time while using concurrency feature: %v\n", totalConcurrentTime)
