@@ -1,7 +1,8 @@
 package main
 
 import (
-	"learningGo/concurrency"
+	// "learningGo/concurrency"
+	"learningGo/Leetcode"
 )
 
 func main() {
@@ -50,6 +51,6 @@ func main() {
 	// leetcode.RoatatingArray();
 	// leetcode.TwoSum();
 	// workerpools.WorkerPool()
-	concurrency.Concurrency()
-
+	// concurrency.Concurrency()
+	leetcode.ContDup()
 }
