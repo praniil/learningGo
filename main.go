@@ -52,5 +52,6 @@ func main() {
 	// leetcode.TwoSum();
 	// workerpools.WorkerPool()
 	// concurrency.Concurrency()
-	leetcode.ContDup()
+	// leetcode.ContDup()
+	leetcode.AnagramString()
 }
