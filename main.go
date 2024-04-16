@@ -54,4 +54,5 @@ func main() {
 	// concurrency.Concurrency()
 	// leetcode.ContDup()
 	leetcode.AnagramString()
+	leetcode.TwoSum()
 }

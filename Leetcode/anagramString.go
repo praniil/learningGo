@@ -36,11 +36,16 @@ func isAnagram(s string, t string) bool {
 	if len(s) != len(t) {
 		return false
 	}
-
+	//this is a map named count which has rune as a key and int as value of that key, default value of key is 0 for int
 	count := make(map[rune]int)
+	//initially for each key(here it is rune) by default the value is 0
+	//for each encounter of a char, that (key= char), value= value+1 char's value increases by 1
 	for _, char := range s {
 		count[char]++
 	}
+	//if the char in t is present in map, it obviously has the value in the map greater than zero,
+	//for each encounter of the char in t the count map's char's key value is decrease by 1
+	//if the value goes negative the char in not present in the initial string because be didnt find the balance while decreaseing the value
 	for _, char := range t {
 		count[char]--
 		if count[char] < 0 {
